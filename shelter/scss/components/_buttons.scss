@@ -1,0 +1,96 @@
+button {
+  cursor: pointer;
+  font-family: $primary-family;
+}
+
+.not-only__button {
+  border-radius: 100px;
+  padding: 15px 45px;
+  width: 207px;
+  height: 52px;
+  background: $color-primary;
+  border: none;
+}
+.not-only__button:hover{
+  background: $color-primary-light;
+}
+.button-slider {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  border: 2px solid $color-primary;
+  background: transparent;
+
+  font-size: 0%;
+}
+.button-slider:hover{
+  background: $color-primary-light;
+  border: none;
+}
+.card__btn {
+  width: 187px;
+  height: 52px;
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  background-color: transparent;
+}
+.card__btn:hover{
+  background: $color-primary-light;
+  border: none;
+}
+.pets__button {
+  border-radius: 100px;
+  padding: 15px 45px;
+  width: 261px;
+  height: 52px;
+  background: $color-primary;
+  border: none;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 17px;
+  color: $color-dark-3xl;
+}
+.donation__btn {
+  border-radius: 9px;
+  padding: 10px 15px;
+  width: 349px;
+  height: 43px;
+  background: $color-primary;
+  border: none;
+  @include fl-row;
+  align-items: center;
+  gap: 10px;
+}
+//**----------page-PETS--------**//
+body.page-pets .btn-double-arrow__left,
+.btn-single-arrow__left {
+  border: 2px solid $color-dark-s;
+  border-radius: 100px;
+  color: $color-dark-s;
+
+  width: 52px;
+  height: 52px;
+}
+body.page-pets .pagination-slider {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+
+  font-family: $primary-family;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+}
+body.page-pets .btn-single-arrow__right,
+.btn-double-arrow__right,
+.btn-number{
+  border: 2px solid $color-primary;
+}
+body.page-pets .btn-number{
+  background: $color-primary;
+}
+

@@ -1,0 +1,33 @@
+@mixin media-tablet {
+  @media (min-width:481px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin media-mobile {
+  @media (min-width:320px) and (max-width: 480px) {
+    @content;
+
+  }
+}
+
+//**-------flex------**//
+@mixin fl-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin fl-clmn{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@mixin bord {
+  border: 1px solid;
+}
+//**---------BREAKPOINTS--------**//
+@mixin tablet-width {
+  @media (min-width: 321px) and (max-width: $tablet-size){@content;}
+}
+@mixin mobile-width {
+  @media (min-width: 321px) and (max-width:$mobile-size){@content;}
+}
