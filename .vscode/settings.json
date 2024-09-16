@@ -1,0 +1,10 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/js30#1.2-audio-player/styles",
+      "savePathReplacementPairs": null
+    },
+  ]
+}
