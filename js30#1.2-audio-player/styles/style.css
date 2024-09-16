@@ -1,0 +1,73 @@
+body {
+  font-size: 10px;
+}
+
+.player-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.9em;
+  padding: 0;
+  overflow: hidden;
+}
+.player-body .player-header {
+  width: 100%;
+  height: 50%;
+}
+.player-body .player-main {
+  width: 100%;
+  height: 50%;
+}
+.player-body .player-main .player-control__panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+.player-body .player-main .player-control__panel .play {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+.player-body .player-main .player-control__panel .description-song {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.player-body .player-main .player-control__panel .description-song .artist-name {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.player-body .player-main .player-control__panel .description-song .song-name {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.player-body .player-main .player-control__panel .container-btns__select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.player-body .player-main .player-control__panel .container-btns__select button {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
+.player-body .player-footer {
+  width: 100%;
+  height: 10%;
+  padding: 0.5em;
+}
+.player-body .player-footer .list-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
