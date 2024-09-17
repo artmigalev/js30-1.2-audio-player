@@ -10,10 +10,14 @@ body {
   border-radius: 0.9em;
   padding: 0;
   overflow: hidden;
+  background-color: grey;
 }
 .player-body .player-header {
   width: 100%;
   height: 50%;
+}
+.player-body .player-header .img-artist {
+  max-width: 31em;
 }
 .player-body .player-main {
   width: 100%;
@@ -30,6 +34,12 @@ body {
   width: 5em;
   height: 5em;
   border-radius: 50%;
+  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/play.png");
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
 }
 .player-body .player-main .player-control__panel .description-song {
   display: flex;
@@ -49,11 +59,43 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 .player-body .player-main .player-control__panel .container-btns__select button {
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%;
+  background-size: 130%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5));
+}
+.player-body .player-main .player-control__panel .container-btns__select .prev {
+  background-position-x: -0.3em;
+  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/forward.png");
+}
+.player-body .player-main .player-control__panel .container-btns__select .next {
+  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/backward.png");
+}
+.player-body .player-main .player-status__panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  gap: 0.5em;
+}
+.player-body .player-main .player-status__panel .time {
+  font-size: 1.5em;
+}
+.player-body .player-main .player-status__panel .progress-bar {
+  width: 100%;
+  height: 0.5em;
+  background-color: white;
+  border-radius: 0.5em;
+  cursor: pointer;
 }
 .player-body .player-footer {
   width: 100%;
