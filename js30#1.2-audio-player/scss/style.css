@@ -35,7 +35,7 @@ body {
   height: 5em;
   border-radius: 50%;
   background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/play.png");
-  background-size: 113%;
+  background-size: 110%;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -112,8 +112,4 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-body .player-body .player-main .player-control__panel .pause {
-  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/pause.png");
 }/*# sourceMappingURL=style.css.map */
