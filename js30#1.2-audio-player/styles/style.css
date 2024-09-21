@@ -74,10 +74,10 @@ body {
 }
 .player-body .player-main .player-control__panel .container-btns__select .prev {
   background-position-x: -0.3em;
-  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/forward.png");
+  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/backward.png");
 }
 .player-body .player-main .player-control__panel .container-btns__select .next {
-  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/backward.png");
+  background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(7, 4, 4, 0.5)), url("../assets/svg/forward.png");
 }
 .player-body .player-main .player-status__panel {
   display: flex;

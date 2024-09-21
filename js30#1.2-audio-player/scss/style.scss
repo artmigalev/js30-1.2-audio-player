@@ -72,11 +72,11 @@ body {
         .prev {
           background-position-x: -0.3em;
           background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgb(7 4 4 / 50%)),
-            url("../assets/svg/forward.png");
+            url("../assets/svg/backward.png");
         }
         .next {
           background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgb(7 4 4 / 50%)),
-            url("../assets/svg/backward.png");
+            url("../assets/svg/forward.png");
         }
       }
     }
@@ -133,4 +133,7 @@ body{
       }
     }
   }
+}
+button:hover{
+  
 }
