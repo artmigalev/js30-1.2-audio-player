@@ -18,6 +18,9 @@ body {
 }
 .player-body .player-header .img-artist {
   max-width: 31em;
+  max-height: 22.1em;
+  width: 100%;
+  min-width: 31em;
 }
 .player-body .player-main {
   width: 100%;
