@@ -1,0 +1,37 @@
+//**-------flex------**//
+@mixin fl-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin fl-clmn {
+  display: flex;
+  flex-direction: column;
+}
+
+//**---------BREAKPOINTS--------**//
+@mixin screen-width {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin tablet-width {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile-width {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@function convertRem($n) {
+  @return calc($n/16) + rem;
+}
+@function toProcent($child, $parent) {
+  @return calc(($child/$parent) * 100%);
+}
+@function emmy($px){
+  @return calc($px/16)+em;
+}
