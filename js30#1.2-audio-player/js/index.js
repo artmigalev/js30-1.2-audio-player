@@ -8,6 +8,7 @@ const display = document.querySelector(".img-artist");
 const currentTime = document.querySelector(".time-start");
 const finishSong = document.querySelector(".time-end");
 const progress = document.querySelector(".progress-bar");
+const bodyImg = document.querySelector(".body-bg");
 const listSrsSongs = [
   {
     artist: "Linlin Park",
@@ -27,17 +28,16 @@ const listSrsSongs = [
 ];
 let indexSong = 0;
 audio.load()
+
 audio.onloadedmetadata = (event) => {
 
 
   finishSong.innerHTML = convertedToMinutes(Math.trunc(audio.duration));
   progress.min = audio.currentTime;
   progress.max = audio.duration;
-  console.log(progress.max);
 
 
 };
-
 
 
 audio.addEventListener("playing", () => {
@@ -45,10 +45,22 @@ audio.addEventListener("playing", () => {
     currentTime.innerHTML = convertedToMinutes(Math.trunc(audio.currentTime));
     progress.value = audio.currentTime;
     progress.addEventListener("click", (event)=>{
+      audio.pause()
       audio.currentTime = progress.value
-      
+      audio.play()
 
 
+
+    });
+    progress.ontouchend = (event) => {
+      audio.pause()
+      audio.currentTime = progress.value;
+      audio.play()
+    };
+    progress.addEventListener("dragend", () => {
+      audio.pause();
+      audio.currentTime = progress.value;
+      audio.play();
     });
   });
 });
@@ -91,6 +103,7 @@ window.onload = () => {
     currentTime.innerHTML = convertedToMinutes(Math.trunc(audio.currentTime));
   });
   audio.addEventListener("ended", () => {
+
     settingSong(indexSong++);
     audio.play();
   });
@@ -105,6 +118,8 @@ function settingSong(indexSong) {
   artist.textContent = listSrsSongs[indexSong].artist;
   song.textContent = listSrsSongs[indexSong].song;
   display.src = `./assets/img/player_pic/${listSrsSongs[indexSong].displayPic}`;
+  bodyImg.src = `./assets/img/player_pic/${listSrsSongs[indexSong].displayPic}`;
+  bodyImg.alt = listSrsSongs[indexSong].song
 
   if (BTN_PLAY.classList.contains("pause")) {
     audio.play();
